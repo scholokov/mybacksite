@@ -81,5 +81,22 @@ echo "<br><br><br>";
 
 
 
+
+// Для построчного чтения используется функция fgets(), которая получает дескриптор файла и возвращает одну считанную строку.
+// $fd = @fopen(DB."comments", 'r') or die("не удалось открыть файл");
+// $comments = '';
+// while (!feof($fd)) {
+//    $comments .= fgets($fd);
+// }
+// fclose($fd);
+
+
+
+
+$con = mysqli_connect( "localhost", "root", "");
+
+
+
+
 require_once '../bootstrap/bootstrap.php';
 // realpath(__DIR__.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'bootstrap'.DIRECTORY_SEPARATOR.'bootstrap.php');
